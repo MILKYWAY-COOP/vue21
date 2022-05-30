@@ -28,7 +28,10 @@ export default {
   <label for='jack'>Jack</label>
   <input type='checkbox' id='john' value='John' v-model='checkedNames'>
   <label for='john'>John</label>
-  <input type='checkbox' id='mike' value='Mike' v-model='checkedNames'>
+  <input type='checkbox' id='mike' value='Add this value' v-model='checkedNames'>
   <label for='mike'>Mike</label>
+  <p>Checked names: <pre>{{checkedNames}}</pre></p>
+
+  <
 
 </template>
