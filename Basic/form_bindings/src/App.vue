@@ -7,7 +7,7 @@ export default {
       checkedNames: [],
       picked: '',
       selected: '',
-      multiSelected: ['A']
+      multiSelected: []
     };
   }
 };
@@ -43,13 +43,21 @@ export default {
 
   <h2>Select</h2>
   <select v-model='selected'>
-  <option disabled value=''>Please Select One</option>
+    <option disabled value=''>Please Select One</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+  </select>
+  <br>
+  <span>Selected: {{selected}}</span>
+
+  <h2>Multi Select</h2>
+  <select v-model='multiSelected' multiple style='width:250px'>
+  <option disabled value=''>Hold Down Shift Key To<br> MultiSelect</option>
   <option>A</option>
   <option>B</option>
   <option>C</option>
   </select>
   <br>
-  <span>Selected: {{selected}}</span>
-
-  
+  <span>Selected: {{multiSelected}}</span>
 </template>
