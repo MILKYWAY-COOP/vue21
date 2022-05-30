@@ -4,9 +4,9 @@ export default {
     return {
       text: 'Edit me',
       checked: true,
-      checkedNames: ['Jack'],
+      checkedNames: [],
       picked: '',
-      selected: 'A',
+      selected: '',
       multiSelected: ['A']
     };
   }
@@ -42,5 +42,14 @@ export default {
   <span>Picked: {{picked}}</span>
 
   <h2>Select</h2>
-  <select v-mod
+  <select v-model='selected'>
+  <option disabled value=''>Please Select One</option>
+  <option>A</option>
+  <option>B</option>
+  <option>C</option>
+  </select>
+  <br>
+  <span>Selected: {{selected}}</span>
+
+  
 </template>
