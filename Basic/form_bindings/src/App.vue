@@ -5,7 +5,7 @@ export default {
       text: 'Edit me',
       checked: true,
       checkedNames: ['Jack'],
-      picked: 'One',
+      picked: '',
       selected: 'A',
       multiSelected: ['A']
     };
@@ -32,6 +32,15 @@ export default {
   <label for='mike'>Mike</label>
   <p>Checked names: <pre>{{checkedNames}}</pre></p>
 
-  <
+  <h2>Radio</h2>
+  <input type='radio' id='one' value='one' v-model='picked'>
+  <label for='one'>One</label>
+  <br>
+  <input type='radio' id='two' value='two' v-model='picked'>
+  <label for='two'>Two</label>
+  <br>
+  <span>Picked: {{picked}}</span>
 
+  <h2>Select</h2>
+  <select v-mod
 </template>
