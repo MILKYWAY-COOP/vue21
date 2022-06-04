@@ -1,9 +1,9 @@
 <script setup>
 const props = defineProps({
-        todo: Object
-    })
+  todo: Object
+})
 </script>
 
 <template>
-    <li>{{todo.next}}</li>
+  <li>{{ todo.text }}</li>
 </template>
