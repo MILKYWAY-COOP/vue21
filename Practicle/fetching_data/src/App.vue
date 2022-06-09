@@ -19,6 +19,7 @@ watchEffect(async () => {
   commits.value = await (await fetch(url)).json();
 });
 
+console.log(commits.value)
 function truncate(v) {
   const newline = v.indexOf('\n');
   return newline > 0 ? v.slice(0, newline) : v;
