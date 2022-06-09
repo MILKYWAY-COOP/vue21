@@ -17,9 +17,10 @@ watchEffect(async () => {
   //re-run whenever currentBranch.value changes
   const url = `${API_URL}${currentBranch.value}`;
   commits.value = await (await fetch(url)).json();
+  console.log(await (await fetch(url)).json());
 });
 
-console.log(commits.value)
+console.log(commits.value);
 function truncate(v) {
   const newline = v.indexOf('\n');
   return newline > 0 ? v.slice(0, newline) : v;
@@ -29,7 +30,6 @@ function formatDate(v) {
   return v.replace(/T|Z/g, ' ');
 }
 
-console.log(commits)
 </script>
 
 <template>
