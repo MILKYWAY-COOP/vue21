@@ -62,6 +62,19 @@ function formatDate(v) {
 </template>
 
 <style>
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: chocolate;
+}
+
 a {
   text-decoration: none;
   color: #42b883;
